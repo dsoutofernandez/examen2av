@@ -32,6 +32,7 @@ public class StatusTwitter {
  
         Query query = new Query("#Cangas");
         QueryResult result = twitter.search(query);
+        System.out.println("CONFLICTO");
         for (Status status : result.getTweets()) {
             System.out.println("@" + status.getUser().getScreenName() + ":" + status.getText());
         }
